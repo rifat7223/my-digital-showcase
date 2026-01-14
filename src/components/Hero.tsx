@@ -45,7 +45,7 @@ export const Hero = () => {
               transition={{ delay: 0.3 }}
               className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4"
             >
-              John Doe
+              Rifat
             </motion.h1>
 
             <motion.h2
@@ -119,7 +119,7 @@ export const Hero = () => {
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/30 shadow-glow">
                 <img
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
-                  alt="John Doe - Full Stack Developer"
+                  alt="Rifat - Full Stack Developer"
                   className="w-full h-full object-cover"
                 />
               </div>

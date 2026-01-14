@@ -72,7 +72,7 @@ export const Footer = () => {
         {/* Copyright */}
         <div className="pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-sm text-center sm:text-left">
-            © {currentYear} John Doe. All rights reserved.
+            © {currentYear} Rifat. All rights reserved.
           </p>
           <p className="text-muted-foreground text-sm flex items-center gap-1">
             Made with <Heart className="w-4 h-4 text-destructive fill-destructive" /> using React & Tailwind
