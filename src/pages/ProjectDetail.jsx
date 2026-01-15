@@ -4,148 +4,100 @@ import { ArrowLeft, ExternalLink, Github, AlertTriangle, Lightbulb, Wrench } fro
 import { Button } from "@/components/ui/button";
 import { projectsData } from "@/components/Projects";
 
-interface ProjectDetail {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-  technologies: string[];
-  features: string[];
-  challenges: string[];
-  improvements: string[];
-  liveUrl?: string;
-  githubUrl?: string;
-}
-
-const projectDetails: Record<string, ProjectDetail> = {
+const projectDetails = {
+  "food-delivery-app": {
+    id: "food-delivery-app",
+    title: "Food Delivery App",
+    description: "A modern food delivery application built with the MERN stack. This platform provides a seamless food ordering experience with features like restaurant browsing, menu viewing, cart management, and order tracking.",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200&h=600&fit=crop",
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "JWT"],
+    features: [
+      "Restaurant browsing and search",
+      "Menu viewing with categories",
+      "Shopping cart functionality",
+      "User authentication",
+      "Order history",
+      "Responsive design for all devices",
+    ],
+    challenges: [
+      "Implementing real-time cart updates across components",
+      "Building a scalable restaurant and menu management system",
+      "Creating an intuitive user interface for food ordering",
+      "Handling user authentication and session management",
+    ],
+    improvements: [
+      "Add real-time order tracking with maps",
+      "Implement payment gateway integration",
+      "Add restaurant reviews and ratings",
+      "Build admin dashboard for restaurant owners",
+      "Add push notifications for order updates",
+    ],
+    liveUrl: "https://remarkable-kringle-e11bb1.netlify.app/",
+    githubUrl: "https://github.com/rifat7223",
+  },
+  "portfolio-website": {
+    id: "portfolio-website",
+    title: "Portfolio Website",
+    description: "A clean and modern portfolio website showcasing projects and skills. Built with React and styled with Tailwind CSS, featuring smooth animations powered by Framer Motion.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop",
+    technologies: ["React", "Tailwind CSS", "Framer Motion", "JavaScript"],
+    features: [
+      "Modern and responsive design",
+      "Smooth scroll animations",
+      "Project showcase section",
+      "Skills visualization",
+      "Contact form",
+      "Mobile-friendly navigation",
+    ],
+    challenges: [
+      "Creating smooth and performant animations",
+      "Ensuring consistent design across all devices",
+      "Optimizing images for fast loading",
+      "Building an accessible and SEO-friendly structure",
+    ],
+    improvements: [
+      "Add dark/light theme toggle",
+      "Implement blog section",
+      "Add project filtering by technology",
+      "Integrate with CMS for easy content updates",
+      "Add multi-language support",
+    ],
+    liveUrl: "https://graceful-malasada-294a90.netlify.app/",
+    githubUrl: "https://github.com/rifat7223",
+  },
   "ecommerce-platform": {
     id: "ecommerce-platform",
     title: "E-Commerce Platform",
-    description: "A comprehensive e-commerce solution built from the ground up. This platform provides a seamless shopping experience with features like product browsing, cart management, secure checkout, and order tracking. The admin panel allows store owners to manage products, orders, and customers efficiently.",
+    description: "A comprehensive e-commerce solution built from the ground up. This platform provides a seamless shopping experience with features like product browsing, cart management, secure checkout, and order tracking.",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=600&fit=crop",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe", "Redux", "Tailwind CSS", "JWT"],
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "JWT"],
     features: [
       "User authentication and authorization",
       "Product catalog with search and filtering",
       "Shopping cart with persistent storage",
-      "Secure payment processing with Stripe",
       "Order management and tracking",
-      "Admin dashboard for inventory management",
       "Responsive design for all devices",
     ],
     challenges: [
-      "Implementing a robust cart system that persists across sessions and handles edge cases like out-of-stock items",
-      "Setting up Stripe payment integration with proper error handling and webhook processing",
-      "Optimizing database queries for large product catalogs while maintaining fast search functionality",
-      "Building a real-time inventory management system to prevent overselling",
+      "Implementing a robust cart system that persists across sessions",
+      "Building secure user authentication with JWT",
+      "Optimizing database queries for large product catalogs",
+      "Creating responsive product grids that work on all devices",
     ],
     improvements: [
-      "Add AI-powered product recommendations based on browsing history",
-      "Implement a wishlist feature with price drop notifications",
-      "Add multi-vendor support to transform it into a marketplace",
-      "Integrate with more payment gateways for international support",
-      "Add progressive web app (PWA) features for offline browsing",
+      "Add payment gateway integration",
+      "Implement product recommendations",
+      "Add wishlist feature",
+      "Build admin dashboard for inventory management",
+      "Add customer reviews and ratings",
     ],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-  },
-  "task-management-app": {
-    id: "task-management-app",
-    title: "Task Management App",
-    description: "A powerful collaborative task management application designed for teams. Features real-time updates using WebSockets, drag-and-drop task organization, and comprehensive project analytics. Built with modern technologies to ensure a smooth and responsive user experience.",
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=1200&h=600&fit=crop",
-    technologies: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Socket.io", "NextAuth.js", "Tailwind CSS", "Zustand"],
-    features: [
-      "Real-time collaboration with WebSockets",
-      "Drag-and-drop Kanban boards",
-      "Project and team management",
-      "Task assignment and due dates",
-      "Comment threads and @mentions",
-      "File attachments and sharing",
-      "Analytics and productivity insights",
-    ],
-    challenges: [
-      "Implementing real-time synchronization across multiple clients without conflicts",
-      "Building a performant drag-and-drop interface that works smoothly on all devices",
-      "Designing a flexible permission system for different team roles",
-      "Handling complex state management for nested project structures",
-    ],
-    improvements: [
-      "Add time tracking and reporting features",
-      "Implement calendar integration (Google Calendar, Outlook)",
-      "Add automation rules for repetitive workflows",
-      "Build mobile apps using React Native",
-      "Add AI-powered task prioritization suggestions",
-    ],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-  },
-  "ai-content-generator": {
-    id: "ai-content-generator",
-    title: "AI Content Generator",
-    description: "An intelligent content creation tool powered by OpenAI's GPT models. This application helps users generate high-quality blog posts, social media content, product descriptions, and more. Features include content templates, tone adjustment, and SEO optimization suggestions.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=600&fit=crop",
-    technologies: ["React", "TypeScript", "OpenAI API", "Express", "MongoDB", "Redis", "Tailwind CSS", "Framer Motion"],
-    features: [
-      "Multiple content type generation",
-      "Customizable tone and style",
-      "Content templates library",
-      "SEO optimization suggestions",
-      "Content history and favorites",
-      "Export to multiple formats",
-      "Usage analytics and limits",
-    ],
-    challenges: [
-      "Managing API rate limits and implementing an efficient queuing system",
-      "Building a caching layer to reduce API costs for similar requests",
-      "Creating intuitive UI for adjusting AI parameters without overwhelming users",
-      "Implementing streaming responses for better user experience on long content",
-    ],
-    improvements: [
-      "Add support for image generation with DALL-E integration",
-      "Implement multi-language content generation",
-      "Add plagiarism checking integration",
-      "Build a WordPress plugin for direct publishing",
-      "Add team collaboration features with shared templates",
-    ],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-  },
-  "real-estate-platform": {
-    id: "real-estate-platform",
-    title: "Real Estate Platform",
-    description: "A comprehensive real estate listing and management platform. Features include property search with advanced filters, interactive maps, virtual tours, and a powerful agent dashboard. Built to handle thousands of listings while maintaining fast performance.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=600&fit=crop",
-    technologies: ["React", "Node.js", "PostgreSQL", "Mapbox", "Elasticsearch", "Redis", "AWS S3", "Tailwind CSS"],
-    features: [
-      "Advanced property search with filters",
-      "Interactive map with clustering",
-      "Virtual property tours",
-      "Agent and agency profiles",
-      "Favorites and saved searches",
-      "Contact form with lead tracking",
-      "Property comparison tool",
-    ],
-    challenges: [
-      "Implementing efficient geospatial queries for map-based search",
-      "Building a scalable image storage and optimization pipeline",
-      "Creating an intuitive search experience with many filter options",
-      "Handling high traffic during peak listing periods",
-    ],
-    improvements: [
-      "Add AI-powered property valuation estimates",
-      "Implement virtual staging for empty properties",
-      "Add mortgage calculator with bank integrations",
-      "Build neighborhood insights with crime and school data",
-      "Add AR features for viewing furniture placement",
-    ],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/rifat7223",
   },
 };
 
 const ProjectDetail = () => {
-  const { id } = useParams<{ id: string }>();
+  const { id } = useParams();
   const project = id ? projectDetails[id] : null;
 
   if (!project) {

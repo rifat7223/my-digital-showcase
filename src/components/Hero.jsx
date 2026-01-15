@@ -1,12 +1,10 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Twitter, Facebook, Download, ChevronDown } from "lucide-react";
+import { Github, Linkedin, Download, ChevronDown } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
+  { icon: Github, href: "https://github.com/rifat7223", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/mohamaad-rifat-7223r/", label: "LinkedIn" },
 ];
 
 export const Hero = () => {
@@ -54,7 +52,7 @@ export const Hero = () => {
               transition={{ delay: 0.4 }}
               className="text-2xl sm:text-3xl md:text-4xl font-display font-semibold text-gradient mb-6"
             >
-              Full Stack Developer
+              MERN Stack Developer
             </motion.h2>
 
             <motion.p
@@ -119,7 +117,7 @@ export const Hero = () => {
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/30 shadow-glow">
                 <img
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
-                  alt="Rifat - Full Stack Developer"
+                  alt="Rifat - MERN Stack Developer"
                   className="w-full h-full object-cover"
                 />
               </div>

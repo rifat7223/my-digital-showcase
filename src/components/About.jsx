@@ -64,8 +64,8 @@ export const About = () => {
                 diving deep into modern frameworks and backend technologies.
               </p>
               <p>
-                Today, I specialize in building <span className="text-primary">full-stack web applications</span> using 
-                the MERN stack, along with modern tools like TypeScript, Next.js, and cloud services. 
+                Today, I specialize in building <span className="text-primary">MERN stack web applications</span> using 
+                MongoDB, Express.js, React, and Node.js, along with modern tools like Next.js and cloud services. 
                 I love tackling complex problems and transforming ideas into elegant, user-friendly solutions.
               </p>
               <p>

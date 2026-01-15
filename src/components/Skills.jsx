@@ -1,21 +1,10 @@
 import { motion } from "framer-motion";
 
-interface Skill {
-  name: string;
-  level: number;
-}
-
-interface SkillCategory {
-  title: string;
-  skills: Skill[];
-}
-
-const skillCategories: SkillCategory[] = [
+const skillCategories = [
   {
     title: "Frontend",
     skills: [
       { name: "React / Next.js", level: 95 },
-      { name: "TypeScript", level: 90 },
       { name: "Tailwind CSS", level: 92 },
       { name: "HTML / CSS", level: 95 },
       { name: "JavaScript", level: 93 },
@@ -27,7 +16,6 @@ const skillCategories: SkillCategory[] = [
       { name: "Node.js", level: 88 },
       { name: "Express.js", level: 85 },
       { name: "MongoDB", level: 82 },
-      { name: "PostgreSQL", level: 78 },
       { name: "REST APIs", level: 90 },
     ],
   },
@@ -35,15 +23,15 @@ const skillCategories: SkillCategory[] = [
     title: "Tools & Others",
     skills: [
       { name: "Git / GitHub", level: 92 },
-      { name: "Docker", level: 75 },
-      { name: "AWS / Cloud", level: 70 },
+      { name: "Netlify", level: 85 },
+      { name: "Vercel", level: 85 },
       { name: "Figma", level: 80 },
       { name: "CI/CD", level: 72 },
     ],
   },
 ];
 
-const SkillBar = ({ skill, index }: { skill: Skill; index: number }) => (
+const SkillBar = ({ skill, index }) => (
   <motion.div
     initial={{ opacity: 0, x: -20 }}
     whileInView={{ opacity: 1, x: 0 }}
