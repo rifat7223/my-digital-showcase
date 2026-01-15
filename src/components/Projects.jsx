@@ -2,22 +2,24 @@ import { motion } from "framer-motion";
 import { ExternalLink, Github, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import scholar from "@/assets/scolar.jpg";
+import jobhunt from "@/assets/jobhunt.jpg";
 
 export const projectsData = [
   {
     id: "food-delivery-app",
-    title: "Food Delivery App",
-    shortDescription: "A modern food delivery application with cart, ordering, and restaurant browsing features.",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=400&fit=crop",
+    title: "Scholar-Steam App",
+    shortDescription: "A modern scholar-steam application with cart, applying, and  browsing features.",
+    image: scholar,
     technologies: ["React", "Node.js", "MongoDB", "Express.js"],
     liveUrl: "https://remarkable-kringle-e11bb1.netlify.app/",
     githubUrl: "https://github.com/rifat7223",
   },
   {
     id: "portfolio-website",
-    title: "Portfolio Website",
-    shortDescription: "A clean and modern portfolio website showcasing projects and skills.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+    title: "job-hunt Website",
+    shortDescription: "A clean and modern jobhunt website showcasing projects and skills.",
+    image: jobhunt,
     technologies: ["React", "Tailwind CSS", "Framer Motion"],
     liveUrl: "https://graceful-malasada-294a90.netlify.app/",
     githubUrl: "https://github.com/rifat7223",

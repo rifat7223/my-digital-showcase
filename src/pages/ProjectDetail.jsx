@@ -3,20 +3,31 @@ import { motion } from "framer-motion";
 import { ArrowLeft, ExternalLink, Github, AlertTriangle, Lightbulb, Wrench } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { projectsData } from "@/components/Projects";
-
+import scholar from "@/assets/scolar.jpg";
+import jobhunt from "@/assets/jobhunt.jpg";
 const projectDetails = {
   "food-delivery-app": {
     id: "food-delivery-app",
     title: "Food Delivery App",
     description: "A modern food delivery application built with the MERN stack. This platform provides a seamless food ordering experience with features like restaurant browsing, menu viewing, cart management, and order tracking.",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200&h=600&fit=crop",
+    image: scholar,
     technologies: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "JWT"],
     features: [
-      "Restaurant browsing and search",
-      "Menu viewing with categories",
-      "Shopping cart functionality",
+      "Browse scholarships with search, filter & sorting",
+      "View scholarship details",
+      "Apply for scholarships",
       "User authentication",
       "Order history",
+     " 🧑‍💼 Admin / Moderator",
+
+"Manage scholarships (Add / Update / Delete)",
+
+"Manage users & roles",
+
+
+
+"Update application ",
+
       "Responsive design for all devices",
     ],
     challenges: [
@@ -28,8 +39,8 @@ const projectDetails = {
     improvements: [
       "Add real-time order tracking with maps",
       "Implement payment gateway integration",
-      "Add restaurant reviews and ratings",
-      "Build admin dashboard for restaurant owners",
+      "Add scholar reviews and ratings",
+      "Build admin dashboard for  owners",
       "Add push notifications for order updates",
     ],
     liveUrl: "https://remarkable-kringle-e11bb1.netlify.app/",
@@ -37,9 +48,9 @@ const projectDetails = {
   },
   "portfolio-website": {
     id: "portfolio-website",
-    title: "Portfolio Website",
+    title: "job-hunt",
     description: "A clean and modern portfolio website showcasing projects and skills. Built with React and styled with Tailwind CSS, featuring smooth animations powered by Framer Motion.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop",
+    image: jobhunt,
     technologies: ["React", "Tailwind CSS", "Framer Motion", "JavaScript"],
     features: [
       "Modern and responsive design",
