@@ -1,60 +1,34 @@
 import { motion } from "framer-motion";
 import { Briefcase, Calendar, ExternalLink } from "lucide-react";
 
-interface Experience {
-  title: string;
-  company: string;
-  companyUrl?: string;
-  period: string;
-  type: string;
-  description: string;
-  responsibilities: string[];
-  technologies: string[];
-}
-
-const experienceData: Experience[] = [
+const experienceData = [
   {
-    title: "Senior Full Stack Developer",
-    company: "TechCorp Solutions",
-    companyUrl: "https://example.com",
-    period: "Jan 2023 - Present",
-    type: "Full-time",
-    description: "Leading development of enterprise-level web applications and mentoring junior developers.",
+    title: "MERN Stack Developer",
+    company: "Freelance",
+    period: "2023 - Present",
+    type: "Self-employed",
+    description: "Building modern web applications for various clients using the MERN stack.",
     responsibilities: [
-      "Architecting and implementing scalable React applications",
-      "Building RESTful APIs with Node.js and Express",
-      "Collaborating with design team on UI/UX improvements",
-      "Code reviews and mentoring team members",
+      "Developing full-stack web applications with React and Node.js",
+      "Building RESTful APIs with Express.js and MongoDB",
+      "Deploying applications on Netlify and Vercel",
+      "Collaborating with clients to understand requirements",
     ],
-    technologies: ["React", "TypeScript", "Node.js", "PostgreSQL", "AWS"],
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
   },
   {
     title: "Frontend Developer",
-    company: "Digital Agency XYZ",
-    companyUrl: "https://example.com",
-    period: "Jun 2022 - Dec 2022",
-    type: "Full-time",
-    description: "Developed responsive web interfaces for various client projects.",
+    company: "Personal Projects",
+    period: "2022 - 2023",
+    type: "Learning",
+    description: "Developed various personal projects to enhance frontend development skills.",
     responsibilities: [
-      "Built pixel-perfect UI components from Figma designs",
-      "Optimized web performance and accessibility",
+      "Built responsive web interfaces using React",
+      "Learned modern CSS frameworks like Tailwind CSS",
       "Integrated third-party APIs and services",
-      "Participated in agile development processes",
+      "Practiced version control with Git and GitHub",
     ],
-    technologies: ["React", "Next.js", "Tailwind CSS", "GraphQL"],
-  },
-  {
-    title: "Web Development Intern",
-    company: "StartUp Hub",
-    period: "Jan 2022 - May 2022",
-    type: "Internship",
-    description: "Gained hands-on experience in full-stack development in a fast-paced environment.",
-    responsibilities: [
-      "Developed features for the company's main product",
-      "Fixed bugs and improved code quality",
-      "Learned best practices from senior developers",
-    ],
-    technologies: ["JavaScript", "React", "MongoDB", "Git"],
+    technologies: ["React", "JavaScript", "Tailwind CSS", "Git"],
   },
 ];
 

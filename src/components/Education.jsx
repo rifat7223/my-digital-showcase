@@ -1,38 +1,24 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Calendar, MapPin } from "lucide-react";
 
-interface Education {
-  degree: string;
-  institution: string;
-  location: string;
-  period: string;
-  description: string;
-  achievements?: string[];
-}
-
-const educationData: Education[] = [
+const educationData = [
   {
-    degree: "Bachelor of Science in Computer Science",
-    institution: "State University of Technology",
-    location: "New York, USA",
-    period: "2018 - 2022",
-    description: "Specialized in Software Engineering with a focus on web technologies and distributed systems.",
+    degree: "Bachelor of Arts (BA) in Political Science",
+    institution: "7th College",
+    location: "Dhaka, Bangladesh",
+    period: "2021 - 2022 (Running)",
+    description: "Currently pursuing graduation with a focus on Political Science.",
     achievements: [
-      "Graduated with Honors (GPA: 3.8/4.0)",
-      "Dean's List for 6 consecutive semesters",
-      "Led the Web Development Club",
+      "Session: 2021-2022",
+      "Active participation in academic activities",
     ],
   },
   {
     degree: "Higher Secondary Certificate (HSC)",
-    institution: "City College",
-    location: "Boston, USA",
-    period: "2016 - 2018",
-    description: "Science major with emphasis on Mathematics and Computer Science.",
-    achievements: [
-      "Top 5% of graduating class",
-      "Science Olympiad finalist",
-    ],
+    institution: "Amirjan College",
+    location: "Dhaka, Bangladesh",
+    period: "Completed",
+    description: "Successfully completed higher secondary education.",
   },
 ];
 

@@ -1,10 +1,8 @@
-import { Github, Linkedin, Twitter, Facebook, Heart } from "lucide-react";
+import { Github, Linkedin, Heart } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
+  { icon: Github, href: "https://github.com/rifat7223", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/mohamaad-rifat-7223r/", label: "LinkedIn" },
 ];
 
 const quickLinks = [

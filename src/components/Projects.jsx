@@ -3,52 +3,33 @@ import { ExternalLink, Github, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
-export interface Project {
-  id: string;
-  title: string;
-  shortDescription: string;
-  image: string;
-  technologies: string[];
-  liveUrl?: string;
-  githubUrl?: string;
-}
-
-export const projectsData: Project[] = [
+export const projectsData = [
+  {
+    id: "food-delivery-app",
+    title: "Food Delivery App",
+    shortDescription: "A modern food delivery application with cart, ordering, and restaurant browsing features.",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=400&fit=crop",
+    technologies: ["React", "Node.js", "MongoDB", "Express.js"],
+    liveUrl: "https://remarkable-kringle-e11bb1.netlify.app/",
+    githubUrl: "https://github.com/rifat7223",
+  },
+  {
+    id: "portfolio-website",
+    title: "Portfolio Website",
+    shortDescription: "A clean and modern portfolio website showcasing projects and skills.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+    technologies: ["React", "Tailwind CSS", "Framer Motion"],
+    liveUrl: "https://graceful-malasada-294a90.netlify.app/",
+    githubUrl: "https://github.com/rifat7223",
+  },
   {
     id: "ecommerce-platform",
     title: "E-Commerce Platform",
     shortDescription: "A full-featured online shopping platform with cart, checkout, and payment integration.",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+    technologies: ["React", "Node.js", "MongoDB", "Express.js"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-  },
-  {
-    id: "task-management-app",
-    title: "Task Management App",
-    shortDescription: "A collaborative task management tool with real-time updates and team features.",
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-    technologies: ["Next.js", "TypeScript", "PostgreSQL", "Socket.io"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-  },
-  {
-    id: "ai-content-generator",
-    title: "AI Content Generator",
-    shortDescription: "An AI-powered tool that helps create blog posts, social media content, and more.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
-    technologies: ["React", "OpenAI API", "Express", "Tailwind CSS"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-  },
-  {
-    id: "real-estate-platform",
-    title: "Real Estate Platform",
-    shortDescription: "A property listing and management platform with advanced search and filtering.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
-    technologies: ["React", "Node.js", "PostgreSQL", "Mapbox"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/rifat7223",
   },
 ];
 
@@ -71,7 +52,7 @@ export const Projects = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projectsData.map((project, index) => (
             <motion.div
               key={project.id}

@@ -7,25 +7,25 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "john.doe@example.com",
-    href: "mailto:john.doe@example.com",
+    value: "dgsrifat24@gmail.com",
+    href: "mailto:dgsrifat24@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    value: "+880 1908539281",
+    href: "tel:+8801908539281",
   },
   {
     icon: MessageCircle,
     label: "WhatsApp",
-    value: "+1 (555) 123-4567",
-    href: "https://wa.me/15551234567",
+    value: "+880 1908539281",
+    href: "https://wa.me/8801908539281",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "New York, USA",
+    value: "Dhaka, Bangladesh",
   },
 ];
 
@@ -37,7 +37,7 @@ export const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission - you can integrate with email service
     console.log("Form submitted:", formData);
@@ -45,7 +45,7 @@ export const Contact = () => {
     setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
