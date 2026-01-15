@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Download, ChevronDown } from "lucide-react";
+import profileImage from "@/assets/profile.jpg";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/rifat7223", label: "GitHub" },
@@ -116,7 +117,7 @@ export const Hero = () => {
               <div className="absolute inset-0 bg-gradient-primary rounded-full blur-2xl opacity-30 animate-pulse-slow" />
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/30 shadow-glow">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                  src={profileImage}
                   alt="Rifat - MERN Stack Developer"
                   className="w-full h-full object-cover"
                 />
