@@ -74,7 +74,7 @@ export const Hero = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8"
             >
               <Button variant="hero" size="lg" asChild>
-                <a href="/resume.pdf" download>
+                <a href="/Rifat_Resume.pdf" download>
                   <Download className="w-5 h-5" />
                   Download Resume
                 </a>
